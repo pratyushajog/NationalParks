@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NationalParksListVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
 
     view.backgroundColor = .red
+    NetworkManager.shared.getParks(start: 0) { (parks, error) in
+      print(parks)
+    }
   }
 
 
