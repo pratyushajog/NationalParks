@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Park: Codable {
+struct Park: Codable, Hashable {
   var url: String?
   var fullName: String?
   var parkCode: String?

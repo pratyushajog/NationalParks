@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A05D5C32BEC370600F0D00C /* ParkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05D5C22BEC370600F0D00C /* ParkImageView.swift */; };
 		0A06E0832BD1BA9A0013D50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E0822BD1BA9A0013D50B /* AppDelegate.swift */; };
 		0A06E0852BD1BA9A0013D50B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E0842BD1BA9A0013D50B /* SceneDelegate.swift */; };
 		0A06E0872BD1BA9A0013D50B /* NationalParksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E0862BD1BA9A0013D50B /* NationalParksListVC.swift */; };
@@ -17,9 +18,12 @@
 		0A06E09D2BD72EAD0013D50B /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E09C2BD72EAD0013D50B /* ImageData.swift */; };
 		0A06E0A12BD85E4F0013D50B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E0A02BD85E4F0013D50B /* NetworkManager.swift */; };
 		0A06E0A32BD868030013D50B /* ParkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E0A22BD868030013D50B /* ParkData.swift */; };
+		0A06E0A62BE059B10013D50B /* ParkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E0A52BE059B10013D50B /* ParkCollectionViewCell.swift */; };
+		0A06E0A82BE05A830013D50B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06E0A72BE05A830013D50B /* TitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A05D5C22BEC370600F0D00C /* ParkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkImageView.swift; sourceTree = "<group>"; };
 		0A06E07F2BD1BA9A0013D50B /* NationalParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A06E0822BD1BA9A0013D50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A06E0842BD1BA9A0013D50B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		0A06E09C2BD72EAD0013D50B /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		0A06E0A02BD85E4F0013D50B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0A06E0A22BD868030013D50B /* ParkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkData.swift; sourceTree = "<group>"; };
+		0A06E0A52BE059B10013D50B /* ParkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A06E0A72BE05A830013D50B /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		0A06E0812BD1BA9A0013D50B /* NationalParks */ = {
 			isa = PBXGroup;
 			children = (
+				0A06E0A42BE059820013D50B /* Views */,
 				0A06E09F2BD85E3C0013D50B /* Managers */,
 				0A06E0962BD72BE70013D50B /* Models */,
 				0A06E09E2BD85C540013D50B /* Support */,
@@ -109,6 +116,16 @@
 				0A06E0A02BD85E4F0013D50B /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		0A06E0A42BE059820013D50B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A06E0A52BE059B10013D50B /* ParkCollectionViewCell.swift */,
+				0A06E0A72BE05A830013D50B /* TitleLabel.swift */,
+				0A05D5C22BEC370600F0D00C /* ParkImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +200,15 @@
 			files = (
 				0A06E09B2BD72E7F0013D50B /* Activity.swift in Sources */,
 				0A06E0A32BD868030013D50B /* ParkData.swift in Sources */,
+				0A06E0A62BE059B10013D50B /* ParkCollectionViewCell.swift in Sources */,
+				0A06E0A82BE05A830013D50B /* TitleLabel.swift in Sources */,
 				0A06E0872BD1BA9A0013D50B /* NationalParksListVC.swift in Sources */,
 				0A06E0832BD1BA9A0013D50B /* AppDelegate.swift in Sources */,
 				0A06E0A12BD85E4F0013D50B /* NetworkManager.swift in Sources */,
 				0A06E0852BD1BA9A0013D50B /* SceneDelegate.swift in Sources */,
 				0A06E0982BD72C010013D50B /* Park.swift in Sources */,
 				0A06E09D2BD72EAD0013D50B /* ImageData.swift in Sources */,
+				0A05D5C32BEC370600F0D00C /* ParkImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

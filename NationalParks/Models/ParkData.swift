@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ParkData: Codable {
+struct ParkData: Codable, Hashable {
   var data: [Park]
 }
